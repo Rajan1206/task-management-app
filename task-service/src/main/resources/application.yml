@@ -1,0 +1,30 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: task-service
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: root
+    password: admin123
+  jpa:
+    database:
+        platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  kafka:
+      bootstrap-servers: "${BOOTSTRAP_SERVER:kafka:29092}"
+      topic:
+        name: task-events
+      producer:
+        key-serializer: org.apache.kafka.common.serialization.StringSerializer
+        value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus

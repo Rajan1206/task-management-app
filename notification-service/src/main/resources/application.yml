@@ -1,0 +1,31 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: notification-service
+  kafka:
+    bootstrap-servers: ${BOOTSTRAP_SERVER}
+    consumer:
+      group-id: notification-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+  mail:
+    host: sandbox.smtp.mailtrap.io
+    port: 587
+    username: 0eb0d699684773
+    password: dea05031feec47
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+  sender:
+    email:
+      id: rajan201701029@gmail.com
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus

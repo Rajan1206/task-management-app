@@ -1,0 +1,7 @@
+com/example/notificationservice/service/EmailService.class
+com/example/notificationservice/config/ApplicationConfig.class
+com/example/notificationservice/service/impl/EmailServiceImpl.class
+com/example/notificationservice/model/TaskEvent$TaskEventBuilder.class
+com/example/notificationservice/kafka/TaskEventConsumer.class
+com/example/notificationservice/NotificationServiceApplication.class
+com/example/notificationservice/model/TaskEvent.class

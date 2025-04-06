@@ -1,0 +1,4 @@
+/home/rajanladani/Personal/learning/genea-task/api-gateway/src/main/java/com/example/apigateway/ApiGatewayApplication.java
+/home/rajanladani/Personal/learning/genea-task/api-gateway/src/main/java/com/example/apigateway/config/GatewayConfig.java
+/home/rajanladani/Personal/learning/genea-task/api-gateway/src/main/java/com/example/apigateway/config/JwtAuthGatewayFilterFactory.java
+/home/rajanladani/Personal/learning/genea-task/api-gateway/src/main/java/com/example/apigateway/security/JwtAuthFilter.java

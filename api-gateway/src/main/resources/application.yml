@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+
+jwt:
+  secret: 86c7c538ceae76703d95cac232eaeb4dffabce2ffaa0c25f2ea90a3715192db9
+
+auth:
+  service:
+    url: ${AUTH_SERVICE_URL}
+
+task:
+  service:
+    url: ${TASK_SERVICE_URL}

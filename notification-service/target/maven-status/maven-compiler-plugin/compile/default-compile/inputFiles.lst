@@ -1,0 +1,6 @@
+/home/rajanladani/Personal/learning/genea-task/notification-service/src/main/java/com/example/notificationservice/NotificationServiceApplication.java
+/home/rajanladani/Personal/learning/genea-task/notification-service/src/main/java/com/example/notificationservice/config/ApplicationConfig.java
+/home/rajanladani/Personal/learning/genea-task/notification-service/src/main/java/com/example/notificationservice/kafka/TaskEventConsumer.java
+/home/rajanladani/Personal/learning/genea-task/notification-service/src/main/java/com/example/notificationservice/model/TaskEvent.java
+/home/rajanladani/Personal/learning/genea-task/notification-service/src/main/java/com/example/notificationservice/service/EmailService.java
+/home/rajanladani/Personal/learning/genea-task/notification-service/src/main/java/com/example/notificationservice/service/impl/EmailServiceImpl.java

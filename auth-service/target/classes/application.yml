@@ -1,0 +1,27 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: auth-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/genea
+    username: root
+    password: admin123
+  jpa:
+    database:
+        platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+
+security:
+  jwt:
+    secret-key: 86c7c538ceae76703d95cac232eaeb4dffabce2ffaa0c25f2ea90a3715192db9
+    expiration-time: 600000
